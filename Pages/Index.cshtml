@@ -1,0 +1,33 @@
+﻿@page
+@model CoreTestApp.Pages.NameMessageTaskModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<h1>Hello World</h1>
+<br />
+<h5> By Martin Konecny</h5>
+<h2> The current time on the server is @DateTime.Now</h2>
+
+<p>Please eneter your name here:</p>
+
+<div asp-validation-summary="All"></div>
+<form method="POST">
+    <div>Name: <input asp-for="name" /></div>
+    <br />
+    <input type="submit" class="btn-style" />
+</form>
+</br>
+<div id="result">Hello, @this.Model.name</div>
+
+<style>
+    .btn-style {
+        background-color: #3406b9;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+</style>
+
+
