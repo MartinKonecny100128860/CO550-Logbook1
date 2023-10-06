@@ -13,7 +13,7 @@ namespace CoreTestApp.Pages
         }
         public void OnPost() 
         { 
-            this.name = Request.Form["name"];
+            this.name = Request.Form["name"]; 
         }
     }
 }
